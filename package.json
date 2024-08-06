@@ -1,12 +1,15 @@
 {
   "name": "my-project",
   "private": true,
+  "homepage": "https://raj-shopify-devloper.github.io/react-project/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy" : "gh-page -d build"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
